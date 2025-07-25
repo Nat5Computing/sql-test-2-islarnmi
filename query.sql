@@ -5,7 +5,10 @@
 -- Order results by score from highest to lowest
 
 -- Your query here:
-
+SELECT name, score
+FROM students, results
+WHERE subject = 'Math' AND grade_level = 11 AND students.student_id = results.student_id
+ORDER BY score DESC;
 
 
 
